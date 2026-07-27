@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Support, Corvus Music Player</title>
+ <style>
+        /* ac-no-horizontal-scroll v1 */
+        html, body { overflow-x: clip; max-width: 100%; }
+        img, video, iframe { max-width: 100%; height: auto; }
+        pre, table { max-width: 100%; overflow-x: auto; }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; background: #0a0a0c; color: #e8e8ed; line-height: 1.6; }
+ .container { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+ h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+ .date { color: #7c7c84; margin-bottom: 40px; }
+ h2 { font-size: 1.25rem; font-weight: 600; margin: 32px 0 12px; }
+ p, li { color: #d1d1d6; font-size: 1rem; margin-bottom: 12px; }
+ ul { padding-left: 20px; }
+ a { color: #ff9f45; text-decoration: none; }
+ a:hover { text-decoration: underline; }
+ .back { display: inline-block; margin-bottom: 32px; color: #ff9f45; font-size: 0.95rem; }
+ code { background: #19191e; border-radius: 4px; padding: 1px 6px; font-size: 0.92em; color: #ffb870; }
+ footer { border-top: 1px solid #1e1e24; margin-top: 48px; padding-top: 24px; color: #7c7c84; font-size: 0.9rem; }
+        @media (max-width: 720px) { body { min-height: 0; } footer { padding-bottom: 24px; padding-top: 24px; } }
+ </style>
+</head>
+<body>
+ <div class="container">
+  <a class="back" href="./">Back to Corvus Music Player</a>
+  <h1>Support</h1>
+  <p class="date">Corvus Music Player for iPhone and iPad</p>
+
+  <p>Something not working, or an idea for the app? Email <a href="mailto:corvusdevs@outlook.com">corvusdevs@outlook.com</a> and include your app version (Settings, About) so a fix can be aimed at the right build.</p>
+
+  <h2>Getting your music in</h2>
+  <p>There are four ways, all under Settings or the Import screen:</p>
+  <ul>
+   <li><strong>Files.</strong> Import individual songs, or a whole folder at once, from On My iPhone, iCloud Drive, or an external drive.</li>
+   <li><strong>Wi-Fi Sharing.</strong> The app shows a web address. Open it in a browser on a computer on the same network and drag your files in. No cable needed.</li>
+   <li><strong>AirDrop.</strong> Send audio files to your device and choose Corvus Music.</li>
+   <li><strong>Network servers.</strong> Browse a WebDAV, SMB, FTP or SFTP server and pull files across.</li>
+  </ul>
+
+  <h2>Supported formats</h2>
+  <p>MP3, AAC and M4A, ALAC, FLAC, WAV, AIFF and Opus, anything the device itself can decode.</p>
+
+  <h2>Common questions</h2>
+  <p><strong>My songs show the wrong name or no artwork.</strong> The app reads the tags embedded in the file. Use the built-in tag editor to correct them, or the auto-tagger to identify a track by listening to it.</p>
+  <p><strong>Lyrics do not appear.</strong> Lyrics come from the free LRClib database and it does not have every track, especially rarer releases. Where lyrics stop before the song ends, or during an instrumental, the app shows a pulsing note rather than freezing on the last line.</p>
+  <p><strong>Lyrics are slightly ahead or behind.</strong> Open the full lyrics view and use the timing control to nudge them. The offset is remembered per song.</p>
+  <p><strong>Songs are at different volumes.</strong> Turn on ReplayGain in Settings. It uses volume information stored in your files where present.</p>
+  <p><strong>Wi-Fi Sharing will not connect.</strong> Both devices must be on the same network, and iOS will ask permission for local network access the first time. If you declined it, re-enable it in the iOS Settings app under Corvus Music.</p>
+  <p><strong>I deleted a song by accident.</strong> Removing a song from the library also deletes the file from the device, and that cannot be undone. Re-import it from your original copy.</p>
+
+  <h2>Privacy</h2>
+  <p>The app collects nothing. See the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>Corvus Music Player, by CorvusDevs.</footer>
+ </div>
+</body>
+</html>
