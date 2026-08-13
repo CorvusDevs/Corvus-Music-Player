@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
  <title>Support, Corvus Music Player</title>
+ <meta name="description" content="Help, common questions, import instructions, and contact information for Corvus Music Player on iPhone and iPad.">
+ <link rel="canonical" href="https://corvusdevs.github.io/Corvus-Music-Player/support.html">
+ <meta name="robots" content="index, follow">
+ <meta property="og:locale" content="en_US">
+ <!-- HREFLANG_BLOCK -->
  <style>
         /* ac-no-horizontal-scroll v1 */
         html, body { overflow-x: clip; max-width: 100%; }
         img, video, iframe { max-width: 100%; height: auto; }
         pre, table { max-width: 100%; overflow-x: auto; }
  * { margin: 0; padding: 0; box-sizing: border-box; }
+ :root { --bg:#0a0a0c; --surface:#19191e; --text:#e8e8ed; --border:#2b2735; }
  body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; background: #0a0a0c; color: #e8e8ed; line-height: 1.6; }
- .container { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+ nav { height:64px; padding:0 24px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; position:relative; }
+ .nav-brand { color:var(--text); font-weight:700; text-decoration:none; }
+ .nav-links { list-style:none; display:flex; align-items:center; gap:22px; padding:0; }
+ .nav-links a { color:#aaa5b3; }
+ .container { max-width:720px; margin:0 auto; padding:60px 24px 80px; }
  h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
  .date { color: #7c7c84; margin-bottom: 40px; }
  h2 { font-size: 1.25rem; font-weight: 600; margin: 32px 0 12px; }
@@ -22,10 +32,16 @@
  .back { display: inline-block; margin-bottom: 32px; color: #ff9f45; font-size: 0.95rem; }
  code { background: #19191e; border-radius: 4px; padding: 1px 6px; font-size: 0.92em; color: #ffb870; }
  footer { border-top: 1px solid #1e1e24; margin-top: 48px; padding-top: 24px; color: #7c7c84; font-size: 0.9rem; }
-        @media (max-width: 720px) { body { min-height: 0; } footer { padding-bottom: 24px; padding-top: 24px; } }
+        /* ac-nav-hamburger v1 */
+        .nav-toggle { display:none; background:none; border:1px solid var(--border); border-radius:8px; color:var(--text); cursor:pointer; padding:8px; align-items:center; justify-content:center; }
+        .nav-toggle svg { display:block; } .nav-brand { flex-shrink:0; }
+        @media (max-width:720px) { .nav-toggle { display:inline-flex; } .nav-links { display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:stretch; background:var(--bg); border-block:1px solid var(--border); padding:4px 24px 8px; margin:0; gap:0; z-index:10; } .nav-links li { width:100%; } .nav-links li a { display:block; padding:14px 0; border-top:1px solid var(--border); } .nav-links li:first-child a { border-top:0; } body.nav-open .nav-links { display:flex; } body.nav-open .nav-toggle { background:var(--surface); } }
+        /* ac-footer-mobile v1 */
+        @media (max-width:720px) { body { min-height:0; } footer { padding-bottom:24px; padding-top:24px; } }
  </style>
 </head>
 <body>
+ <nav><a class="nav-brand" href="./">Corvus Music Player</a><!-- ac-nav-hamburger v2 --><button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var o=document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',o);event.stopPropagation();"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><script>(function(){document.addEventListener("click",function(e){if(!document.body.classList.contains("nav-open"))return;var n=document.querySelector("nav");if(n&&!n.contains(e.target)){document.body.classList.remove("nav-open");var b=document.querySelector(".nav-toggle");if(b)b.setAttribute("aria-expanded","false");}});})();</script><ul class="nav-links"><li><a href="./">Home</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="https://apps.apple.com/app/id6781115973">App Store</a></li></ul></nav>
  <div class="container">
   <a class="back" href="./">Back to Corvus Music Player</a>
   <h1>Support</h1>
