@@ -1,29 +1,28 @@
-# Corvus Music Player
+# Corvus Music
 
-Your music, offline. Corvus Music Player is a private, full-featured music player for iPhone and iPad, built for the audio files you already own.
+Your music. Your terms. Corvus Music is a private, offline music player for the files you already own, with a coral-and-midnight interface designed for iPhone and iPad.
 
-[View on the App Store](https://apps.apple.com/app/id6781115973) | [Website](https://corvusdevs.github.io/Corvus-Music-Player/) | [Support](https://corvusdevs.github.io/Corvus-Music-Player/support.html) | [Privacy](https://corvusdevs.github.io/Corvus-Music-Player/privacy.html)
+[View on the App Store](https://apps.apple.com/app/id6781115973) | [Visit the website](https://corvusdevs.github.io/Corvus-Music-Player/) | [Support](https://corvusdevs.github.io/Corvus-Music-Player/support.html) | [Privacy](https://corvusdevs.github.io/Corvus-Music-Player/privacy.html)
 
-![Corvus Music Player on iPhone and iPad](docs/screenshots/ipad-now-playing.png)
+![Corvus Music library on iPhone](docs/screenshots/iphone-library.png)
 
-## Highlights
+## What it does
 
-- Offline library with instant search and browsing by song, album, artist, genre, composer, folder, or playlist
-- Gapless playback, crossfade, ReplayGain volume leveling, and a fading sleep timer
-- Graphic and parametric equalizer with hundreds of measured headphone presets
-- Synced lyrics with full-screen presentation and per-song timing adjustment
-- Smart playlists, tag editing, duplicate finding, ratings, favorites, history, and bookmarks
-- Import through Files, AirDrop, Finder, network servers, or private Wi-Fi Sharing
-- CarPlay, AirPlay 2, Lock Screen, Control Center, Dynamic Island, widgets, Siri, and Bluetooth controls
-- Purpose-built layouts for iPhone and iPad
+- Plays your MP3, AAC, M4A, ALAC, FLAC, WAV, AIFF, and Opus files without a subscription or account
+- Browses by song, album, artist, genre, composer, folder, playlist, and favorites
+- Provides gapless playback, crossfade, ReplayGain, a sleep timer, and an editable Up Next queue
+- Includes graphic and parametric EQ with measured headphone presets
+- Shows synced lyrics with full-screen presentation and per-song timing adjustment
+- Imports through Files, AirDrop, Finder, network servers, and private Wi-Fi Sharing
+- Supports CarPlay, AirPlay 2, Lock Screen, Control Center, Dynamic Island, widgets, Siri, and Bluetooth controls
 
 ## Privacy
 
-No account, analytics, telemetry, advertising, or tracking. Your music library stays on your device.
+No analytics, telemetry, advertising, tracking, or account. Your library and listening history stay on your device.
 
-## Release
+## Current release
 
-Version 1.0 is available on the App Store. It includes the complete offline library, equalizer, lyrics, Wi-Fi Sharing, system playback integrations, and universal iPhone and iPad support.
+Version 1.0 is available on the App Store. The website previews the coral-and-midnight visual system, consistent library toolbar, faster cold-start loading, and smoother playback transitions coming in the next update.
 
 ## Support
 
