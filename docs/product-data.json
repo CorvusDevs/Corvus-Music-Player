@@ -1,0 +1,23 @@
+{
+  "slug": "Corvus-Music-Player",
+  "name": "Corvus Music Player",
+  "appStoreId": 6781115973,
+  "version": "1.0.1",
+  "releaseDate": "2026-08-22T19:12:01Z",
+  "originalReleaseDate": "2026-08-12T07:00:00Z",
+  "platforms": [
+    "iPhone",
+    "iPad"
+  ],
+  "requirements": {
+    "iOS": "18.0",
+    "iPadOS": "18.0"
+  },
+  "store": {
+    "kind": "app-store",
+    "label": "App Store",
+    "url": "https://apps.apple.com/app/id6781115973"
+  },
+  "metadataSource": "https://itunes.apple.com/lookup?id=6781115973&country=us",
+  "sourceCatalog": "https://corvusdevs.github.io/apps.json"
+}

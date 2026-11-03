@@ -43,9 +43,27 @@
   <meta name="twitter:image" content="https://corvusdevs.github.io/Corvus-Music-Player/og-image.png">
   <link rel="icon" href="../../icon.png">
   <link rel="apple-touch-icon" href="../../icon.png">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"MobileApplication","name":"Corvus Music Player","operatingSystem":"iOS, iPadOS","applicationCategory":"MultimediaApplication","description":"เครื่องเล่นเพลงแบบออฟไลน์ก่อนอื่น ไม่มีบัญชี ไม่ต้องสตรีมมิ่ง มีเพียงคลังเพลงของคุณ","softwareVersion":"1.0","downloadUrl":"https://apps.apple.com/app/id6781115973","image":"https://corvusdevs.github.io/Corvus-Music-Player/icon.png","author":{"@type":"Organization","name":"CorvusDevs","url":"https://corvusdevs.github.io/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-  </script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Corvus Music Player",
+  "operatingSystem": "iOS, iPadOS",
+  "applicationCategory": "MultimediaApplication",
+  "description": "เครื่องเล่นเพลงแบบออฟไลน์ก่อนอื่น ไม่มีบัญชี ไม่ต้องสตรีมมิ่ง มีเพียงคลังเพลงของคุณ",
+  "softwareVersion": "1.0.1",
+  "downloadUrl": "https://apps.apple.com/app/id6781115973",
+  "image": "https://corvusdevs.github.io/Corvus-Music-Player/icon.png",
+  "author": {
+    "@type": "Organization",
+    "name": "CorvusDevs",
+    "url": "https://corvusdevs.github.io/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0.99",
+    "priceCurrency": "USD"
+  }
+}</script>
   <style>
     /* ac-no-horizontal-scroll v1 */
     html, body { overflow-x: clip; max-width: 100%; }
@@ -63,7 +81,7 @@
     .nav-links { display:flex; align-items:center; gap:28px; margin:0; padding:0; list-style:none; }
     .nav-links a { color:var(--muted); text-decoration:none; font-size:14px; font-weight:600; }
     .nav-links a:hover { color:var(--text); }
-    .nav-links .store-link { color:white; background:var(--accent); border-radius:999px; padding:9px 15px; }
+    .nav-links .store-link { color:white; background:#b93624; border-radius:999px; padding:9px 15px; }
     .lang-wrap { position:relative; }
     .lang-btn { border:0; background:transparent; color:var(--muted); font:inherit; font-size:14px; cursor:pointer; }
     .lang-menu { display:none; position:absolute; right:0; top:36px; min-width:150px; padding:8px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; }
@@ -158,7 +176,7 @@
       <li><a href="#whats-new" data-i18n="nav_whats_new">มีอะไรใหม่</a></li>
       <li><a href="../../support.html" data-i18n="nav_support">บริการช่วยเหลือ</a></li>
       <li class="lang-wrap"><button class="lang-btn" aria-label="ภาษา" onclick="this.nextElementSibling.classList.toggle('open');event.stopPropagation();"><span class="lang-glyph">文A</span> <span id="lang-current">ไทย</span></button><div class="lang-menu"><a href="../../">English</a><a href="../es/">Español</a><a href="../fr/">Français</a><a href="../de/">Deutsch</a><a href="../pt/">Português</a><a href="../it/">Italiano</a><a href="../nl/">Nederlands</a><a href="../pl/">Polski</a><a href="../sv/">Svenska</a><a href="../tr/">Türkçe</a><a href="../id/">Bahasa Indonesia</a><a href="../vi/">Tiếng Việt</a><a href="../ja/">日本語</a><a href="../ko/">한국어</a><a href="../zh/">简体中文</a><a href="../ru/">Русский</a><a href="../ar/">العربية</a><a href="../hi/">हिन्दी</a><a href="../th/">ไทย</a></div></li>
-      <li><a class="store-link" href="https://apps.apple.com/app/id6781115973" data-i18n="nav_download">ดูบน App Store</a></li>
+      <li><a data-product-store class="store-link" href="https://apps.apple.com/app/id6781115973" data-i18n="nav_download">ดูบน App Store</a></li>
     </ul>
   </nav>
   <main>
@@ -168,8 +186,8 @@
           <div class="eyebrow" data-i18n="hero_eyebrow">คลังของคุณ อุปกรณ์ของคุณ</div>
           <h1 data-i18n="hero_title">เพลงของคุณออฟไลน์</h1>
           <p class="hero-copy" data-i18n="hero_copy">เครื่องเล่นเพลงแบบออฟไลน์ก่อนอื่น ไม่มีบัญชี ไม่ต้องสตรีมมิ่ง มีเพียงคลังเพลงของคุณ</p>
-          <div class="hero-actions"><a class="app-store" href="https://apps.apple.com/app/id6781115973" aria-label="ดาวน์โหลดบน App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg><span data-i18n="download">ดาวน์โหลดบน App Store</span></a><a class="secondary-link" href="#screenshots" data-i18n="see_app">ดูแอป</a></div>
-          <span class="release-note" data-i18n="release_note">เวอร์ชัน 1.0 พร้อมใช้งานแล้วบน iPhone และ iPad</span>
+          <div class="hero-actions"><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973" aria-label="ดาวน์โหลดบน App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg><span data-i18n="download">ดาวน์โหลดบน App Store</span></a><a class="secondary-link" href="#screenshots" data-i18n="see_app">ดูแอป</a></div>
+          <span class="release-note" data-i18n="release_note">เวอร์ชัน <span data-product-field="version">1.0.1</span> พร้อมใช้งานแล้วบน iPhone และ iPad</span>
         </div>
         <div class="hero-devices" aria-label="Corvus Music Player บน iPhone และ iPad"><img class="hero-ipad" src="../../screenshots/ipad-library.png" alt="Corvus Music Player บน iPhone และ iPad"><img class="hero-phone" src="../../screenshots/iphone-now-playing.png" alt="Corvus Music Player บน iPhone และ iPad"></div>
       </section>
@@ -187,10 +205,10 @@
     <section class="block"><div class="container"><div class="section-label" data-i18n="all_label">รวมทุกอย่าง</div><h2 class="section-title" data-i18n="all_title">รายการคุณสมบัติทั้งหมด</h2><ul class="feature-list">
       <li data-i18n="all_1">นำเข้าไฟล์เสียงจาก Files, AirDrop, iCloud Drive หรือคอมพิวเตอร์ของคุณผ่าน Finder รองรับ MP3, AAC, ALAC, FLAC และรูปแบบอื่นๆ</li><li data-i18n="all_2">การเล่นต่อเนื่อง</li><li data-i18n="all_3">การจางเปลี่ยน</li><li data-i18n="all_4">การปรับระดับเสียง ReplayGain</li><li data-i18n="all_5">ถัดไป</li><li data-i18n="all_6">สุ่ม</li><li data-i18n="all_7">ตัวจับเวลาการนอนหลับ</li><li data-i18n="all_8">รายการโปรด</li><li data-i18n="all_9">ภาพปก</li><li data-i18n="all_10">เพลย์ลิสต์อัจฉริยะ</li><li data-i18n="all_11">ตัวแก้ไขแท็ก</li><li data-i18n="all_12">สำเนา</li><li data-i18n="all_13">ประวัติ</li><li data-i18n="all_14">บุ๊กมาร์ก</li><li data-i18n="all_15">กำลังเปิด</li><li data-i18n="all_16">เพลงของคุณออฟไลน์</li>
     </ul></div></section>
-    <section class="block" id="whats-new"><div class="container"><div class="section-label" data-i18n="change_label">รุ่นที่ได้รับอนุมัติบน App Store</div><h2 class="section-title" data-i18n="change_title">เวอร์ชัน 1.0 มาแล้ว</h2><details class="changelog-box" open><summary data-i18n="change_summary">มีอะไรใหม่ในเวอร์ชัน 1.0</summary><div class="changelog-body"><span class="version-pill">1.0</span><ul><li data-i18n="change_1">คลัง</li><li data-i18n="change_2">เนื้อเพลง</li><li data-i18n="change_3">การแชร์ Wi-Fi</li><li data-i18n="change_4">การเล่นต่อเนื่อง</li><li data-i18n="change_5">พร้อมใช้ CarPlay</li><li data-i18n="change_6">เพลงของคุณออฟไลน์</li></ul></div></details></div></section>
+    <section class="block" id="whats-new"><div class="container"><div class="section-label" data-i18n="change_label">รุ่นที่ได้รับอนุมัติบน App Store</div><h2 class="section-title" data-i18n="change_title">เวอร์ชัน <span data-product-field="version">1.0.1</span> มาแล้ว</h2><details class="changelog-box" open><summary data-i18n="change_summary">มีอะไรใหม่ในเวอร์ชัน <span data-product-field="version">1.0.1</span></summary><div class="changelog-body"><span class="version-pill" data-product-field="version">1.0.1</span><ul><li>ปรับโฉมอัตลักษณ์ของ Corvus ด้วยไอคอนแอปใหม่และสีเน้นโทนคอรัล</li><li>เปิดแอปจากสถานะปิดได้เร็วขึ้น พร้อมแสดงสถานะการโหลดที่ถูกต้องทั่วทั้งคลัง</li><li>เล่นเพลงได้ลื่นไหลขึ้นและข้ามแทร็กได้เร็วขึ้น</li><li>เพิ่มเพลงได้โดยตรงจากรายการเพลง อัลบั้ม เพลย์ลิสต์ โฟลเดอร์ และมุมมองรายการอื่นๆ</li><li>ตัวสลับแอปแสดงหน้าจอจริงของ Corvus Music แล้ว</li></ul><span class="version-pill">1.0</span><ul><li data-i18n="change_1">คลัง</li><li data-i18n="change_2">เนื้อเพลง</li><li data-i18n="change_3">การแชร์ Wi-Fi</li><li data-i18n="change_4">การเล่นต่อเนื่อง</li><li data-i18n="change_5">พร้อมใช้ CarPlay</li><li data-i18n="change_6">เพลงของคุณออฟไลน์</li></ul></div></details></div></section>
     <section class="block" id="faq"><div class="container"><div class="section-label">คำถามที่พบบ่อย</div><h2 class="section-title" data-i18n="faq_title">คำถามทั่วไป</h2><div class="faq"><details><summary data-i18n="q1">เพลงของคุณออฟไลน์</summary><p data-i18n="a1">เครื่องเล่นเพลงแบบออฟไลน์ก่อนอื่น ไม่มีบัญชี ไม่ต้องสตรีมมิ่ง มีเพียงคลังเพลงของคุณ</p></details><details><summary data-i18n="q2">นำเข้า</summary><p data-i18n="a2">นำเข้าเสียงจากไฟล์, AirDrop, การแชร์ผ่าน Wi-Fi หรือเซิร์ฟเวอร์เครือข่าย</p></details><details><summary data-i18n="q3">ความเป็นส่วนตัว</summary><p data-i18n="a3">เครื่องเล่นเพลงแบบออฟไลน์ก่อนอื่น ไม่มีบัญชี ไม่ต้องสตรีมมิ่ง มีเพียงคลังเพลงของคุณ</p></details><details><summary data-i18n="q4">พร้อมใช้ CarPlay</summary><p data-i18n="a4">CarPlay, AirPlay, ควบคุมหน้าจอปลดล็อก, Dynamic Island, รีโมทหูฟัง รวมหมดแล้ว</p></details></div></div></section>
     <section class="block"><div class="container"><div class="section-label" data-i18n="req_label">ความต้องการระบบ</div><h2 class="section-title" data-i18n="req_title">สิ่งที่คุณต้องมี</h2><div class="requirements"><div class="requirement"><span data-i18n="req_device_label">อุปกรณ์</span><strong data-i18n="req_device">iPhone + iPad</strong></div><div class="requirement"><span data-i18n="req_system_label">ระบบ</span><strong data-i18n="req_system">iOS 18+</strong></div><div class="requirement"><span data-i18n="req_files_label">เพลง</span><strong data-i18n="req_files">นำเข้าไฟล์เสียง</strong></div><div class="requirement"><span data-i18n="req_account_label">บัญชี</span><strong data-i18n="req_account">ไม่จำเป็น</strong></div></div></div></section>
-    <section class="final-cta"><h2 data-i18n="final_title">พกเพลงไปกับคุณ</h2><p data-i18n="final_copy">คลัง เสียง และประวัติการฟังยังคงเป็นของคุณ</p><a class="app-store" href="https://apps.apple.com/app/id6781115973"><span data-i18n="final_download">ดู Corvus Music Player บน App Store</span></a></section>
+    <section class="final-cta"><h2 data-i18n="final_title">พกเพลงไปกับคุณ</h2><p data-i18n="final_copy">คลัง เสียง และประวัติการฟังยังคงเป็นของคุณ</p><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973"><span data-i18n="final_download">ดู Corvus Music Player บน App Store</span></a></section>
   </main>
   <footer><div class="footer-inner"><span data-i18n="footer_copy">Corvus Music Player · CorvusDevs</span><div class="footer-links"><a href="../../support.html" data-i18n="footer_support">การตั้งค่า</a><a href="../../privacy.html" data-i18n="footer_privacy">ความเป็นส่วนตัว</a><a href="mailto:corvusdevs@outlook.com" data-i18n="footer_contact">ติดต่อ</a></div></div></footer>
   <script>document.addEventListener('click',function(e){var m=document.querySelector('.lang-menu');if(m)m.classList.remove('open');if(e.target.closest&&e.target.closest('.nav-links a')){document.body.classList.remove('nav-open');var b=document.querySelector('.nav-toggle');if(b)b.setAttribute('aria-expanded','false');}});</script>

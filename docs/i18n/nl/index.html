@@ -43,9 +43,27 @@
   <meta name="twitter:image" content="https://corvusdevs.github.io/Corvus-Music-Player/og-image.png">
   <link rel="icon" href="../../icon.png">
   <link rel="apple-touch-icon" href="../../icon.png">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"MobileApplication","name":"Corvus Music Player","operatingSystem":"iOS, iPadOS","applicationCategory":"MultimediaApplication","description":"Uw offline-first muziekspeler. Geen accounts, geen streaming, alleen uw bibliotheek.","softwareVersion":"1.0","downloadUrl":"https://apps.apple.com/app/id6781115973","image":"https://corvusdevs.github.io/Corvus-Music-Player/icon.png","author":{"@type":"Organization","name":"CorvusDevs","url":"https://corvusdevs.github.io/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-  </script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Corvus Music Player",
+  "operatingSystem": "iOS, iPadOS",
+  "applicationCategory": "MultimediaApplication",
+  "description": "Uw offline-first muziekspeler. Geen accounts, geen streaming, alleen uw bibliotheek.",
+  "softwareVersion": "1.0.1",
+  "downloadUrl": "https://apps.apple.com/app/id6781115973",
+  "image": "https://corvusdevs.github.io/Corvus-Music-Player/icon.png",
+  "author": {
+    "@type": "Organization",
+    "name": "CorvusDevs",
+    "url": "https://corvusdevs.github.io/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0.99",
+    "priceCurrency": "USD"
+  }
+}</script>
   <style>
     /* ac-no-horizontal-scroll v1 */
     html, body { overflow-x: clip; max-width: 100%; }
@@ -63,7 +81,7 @@
     .nav-links { display:flex; align-items:center; gap:28px; margin:0; padding:0; list-style:none; }
     .nav-links a { color:var(--muted); text-decoration:none; font-size:14px; font-weight:600; }
     .nav-links a:hover { color:var(--text); }
-    .nav-links .store-link { color:white; background:var(--accent); border-radius:999px; padding:9px 15px; }
+    .nav-links .store-link { color:white; background:#b93624; border-radius:999px; padding:9px 15px; }
     .lang-wrap { position:relative; }
     .lang-btn { border:0; background:transparent; color:var(--muted); font:inherit; font-size:14px; cursor:pointer; }
     .lang-menu { display:none; position:absolute; right:0; top:36px; min-width:150px; padding:8px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; }
@@ -158,7 +176,7 @@
       <li><a href="#whats-new" data-i18n="nav_whats_new">Nieuw</a></li>
       <li><a href="../../support.html" data-i18n="nav_support">Ondersteuning</a></li>
       <li class="lang-wrap"><button class="lang-btn" aria-label="Taal" onclick="this.nextElementSibling.classList.toggle('open');event.stopPropagation();"><span class="lang-glyph">文A</span> <span id="lang-current">Nederlands</span></button><div class="lang-menu"><a href="../../">English</a><a href="../es/">Español</a><a href="../fr/">Français</a><a href="../de/">Deutsch</a><a href="../pt/">Português</a><a href="../it/">Italiano</a><a href="../nl/">Nederlands</a><a href="../pl/">Polski</a><a href="../sv/">Svenska</a><a href="../tr/">Türkçe</a><a href="../id/">Bahasa Indonesia</a><a href="../vi/">Tiếng Việt</a><a href="../ja/">日本語</a><a href="../ko/">한국어</a><a href="../zh/">简体中文</a><a href="../ru/">Русский</a><a href="../ar/">العربية</a><a href="../hi/">हिन्दी</a><a href="../th/">ไทย</a></div></li>
-      <li><a class="store-link" href="https://apps.apple.com/app/id6781115973" data-i18n="nav_download">Bekijk in de App Store</a></li>
+      <li><a data-product-store class="store-link" href="https://apps.apple.com/app/id6781115973" data-i18n="nav_download">Bekijk in de App Store</a></li>
     </ul>
   </nav>
   <main>
@@ -168,8 +186,8 @@
           <div class="eyebrow" data-i18n="hero_eyebrow">Jouw bibliotheek. Jouw apparaat.</div>
           <h1 data-i18n="hero_title">Jouw muziek, offline.</h1>
           <p class="hero-copy" data-i18n="hero_copy">Uw offline-first muziekspeler. Geen accounts, geen streaming, alleen uw bibliotheek.</p>
-          <div class="hero-actions"><a class="app-store" href="https://apps.apple.com/app/id6781115973" aria-label="Download in de App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg><span data-i18n="download">Download in de App Store</span></a><a class="secondary-link" href="#screenshots" data-i18n="see_app">Bekijk de app</a></div>
-          <span class="release-note" data-i18n="release_note">Versie 1.0 is nu beschikbaar voor iPhone en iPad.</span>
+          <div class="hero-actions"><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973" aria-label="Download in de App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg><span data-i18n="download">Download in de App Store</span></a><a class="secondary-link" href="#screenshots" data-i18n="see_app">Bekijk de app</a></div>
+          <span class="release-note" data-i18n="release_note">Versie <span data-product-field="version">1.0.1</span> is nu beschikbaar voor iPhone en iPad.</span>
         </div>
         <div class="hero-devices" aria-label="Corvus Music Player op iPhone en iPad"><img class="hero-ipad" src="../../screenshots/ipad-library.png" alt="Corvus Music Player op iPhone en iPad"><img class="hero-phone" src="../../screenshots/iphone-now-playing.png" alt="Corvus Music Player op iPhone en iPad"></div>
       </section>
@@ -187,10 +205,10 @@
     <section class="block"><div class="container"><div class="section-label" data-i18n="all_label">Alles inbegrepen</div><h2 class="section-title" data-i18n="all_title">De volledige lijst met functies.</h2><ul class="feature-list">
       <li data-i18n="all_1">Importeer audiodiensten uit Bestanden, AirDrop, iCloud Drive of uw computer via Finder, zoals MP3, AAC, ALAC, FLAC en meer.</li><li data-i18n="all_2">Naadloze afspeel</li><li data-i18n="all_3">Crossfade</li><li data-i18n="all_4">ReplayGain volumeniveau</li><li data-i18n="all_5">Volgende</li><li data-i18n="all_6">Shuffle</li><li data-i18n="all_7">Slaapwekker</li><li data-i18n="all_8">Favorieten</li><li data-i18n="all_9">Albumhoes</li><li data-i18n="all_10">Slimme afspeellijsten</li><li data-i18n="all_11">Tag-bewerk</li><li data-i18n="all_12">Dubbelingen</li><li data-i18n="all_13">Geschiedenis</li><li data-i18n="all_14">Bladwijzers</li><li data-i18n="all_15">Nu Afspelen</li><li data-i18n="all_16">Uw muziek, offline</li>
     </ul></div></section>
-    <section class="block" id="whats-new"><div class="container"><div class="section-label" data-i18n="change_label">Goedgekeurde App Store versie</div><h2 class="section-title" data-i18n="change_title">Versie 1.0 is er.</h2><details class="changelog-box" open><summary data-i18n="change_summary">Nieuw in versie 1.0</summary><div class="changelog-body"><span class="version-pill">1.0</span><ul><li data-i18n="change_1">Bibliotheek</li><li data-i18n="change_2">Tekst</li><li data-i18n="change_3">Wi-Fi-delen</li><li data-i18n="change_4">Naadloze afspeel</li><li data-i18n="change_5">Klaar voor CarPlay</li><li data-i18n="change_6">Uw muziek, offline</li></ul></div></details></div></section>
+    <section class="block" id="whats-new"><div class="container"><div class="section-label" data-i18n="change_label">Goedgekeurde App Store versie</div><h2 class="section-title" data-i18n="change_title">Versie <span data-product-field="version">1.0.1</span> is er.</h2><details class="changelog-box" open><summary data-i18n="change_summary">Nieuw in versie <span data-product-field="version">1.0.1</span></summary><div class="changelog-body"><span class="version-pill" data-product-field="version">1.0.1</span><ul><li>Vernieuwde Corvus-huisstijl met een nieuw appicoon en koraalkleurig accent.</li><li>Snellere koude starts en nauwkeurige laadstatussen in de hele bibliotheek.</li><li>Vloeiender afspelen en sneller nummers overslaan.</li><li>Voeg muziek rechtstreeks toe vanuit lijsten met nummers, albums, afspeellijsten, mappen en andere weergaven.</li><li>De appkiezer toont nu de echte Corvus Music-interface.</li></ul><span class="version-pill">1.0</span><ul><li data-i18n="change_1">Bibliotheek</li><li data-i18n="change_2">Tekst</li><li data-i18n="change_3">Wi-Fi-delen</li><li data-i18n="change_4">Naadloze afspeel</li><li data-i18n="change_5">Klaar voor CarPlay</li><li data-i18n="change_6">Uw muziek, offline</li></ul></div></details></div></section>
     <section class="block" id="faq"><div class="container"><div class="section-label">Veelgestelde vragen</div><h2 class="section-title" data-i18n="faq_title">Veelgestelde vragen.</h2><div class="faq"><details><summary data-i18n="q1">Uw muziek, offline</summary><p data-i18n="a1">Uw offline-first muziekspeler. Geen accounts, geen streaming, alleen uw bibliotheek.</p></details><details><summary data-i18n="q2">Importeer</summary><p data-i18n="a2">Importeer audio uit Bestanden, AirDrop, Wi-Fi-delen of een netwerkserver.</p></details><details><summary data-i18n="q3">Privacy</summary><p data-i18n="a3">Uw offline-first muziekspeler. Geen accounts, geen streaming, alleen uw bibliotheek.</p></details><details><summary data-i18n="q4">Klaar voor CarPlay</summary><p data-i18n="a4">CarPlay, AirPlay, bediening op het vergrendelscherm, Dynamic Island, koptelefoonafstandsbediening. Alles inbegrepen.</p></details></div></div></section>
     <section class="block"><div class="container"><div class="section-label" data-i18n="req_label">Vereisten</div><h2 class="section-title" data-i18n="req_title">Wat je nodig hebt.</h2><div class="requirements"><div class="requirement"><span data-i18n="req_device_label">Apparaten</span><strong data-i18n="req_device">iPhone + iPad</strong></div><div class="requirement"><span data-i18n="req_system_label">Systeem</span><strong data-i18n="req_system">iOS 18+</strong></div><div class="requirement"><span data-i18n="req_files_label">Muziek</span><strong data-i18n="req_files">Importeer audiobestanden</strong></div><div class="requirement"><span data-i18n="req_account_label">Account</span><strong data-i18n="req_account">Niet vereist</strong></div></div></div></section>
-    <section class="final-cta"><h2 data-i18n="final_title">Neem je muziek mee.</h2><p data-i18n="final_copy">Je bibliotheek, je geluid en je luistergeschiedenis blijven van jou.</p><a class="app-store" href="https://apps.apple.com/app/id6781115973"><span data-i18n="final_download">Bekijk Corvus Music Player in de App Store</span></a></section>
+    <section class="final-cta"><h2 data-i18n="final_title">Neem je muziek mee.</h2><p data-i18n="final_copy">Je bibliotheek, je geluid en je luistergeschiedenis blijven van jou.</p><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973"><span data-i18n="final_download">Bekijk Corvus Music Player in de App Store</span></a></section>
   </main>
   <footer><div class="footer-inner"><span data-i18n="footer_copy">Corvus Music Player · CorvusDevs</span><div class="footer-links"><a href="../../support.html" data-i18n="footer_support">Instellingen</a><a href="../../privacy.html" data-i18n="footer_privacy">Privacy</a><a href="mailto:corvusdevs@outlook.com" data-i18n="footer_contact">Contact</a></div></div></footer>
   <script>document.addEventListener('click',function(e){var m=document.querySelector('.lang-menu');if(m)m.classList.remove('open');if(e.target.closest&&e.target.closest('.nav-links a')){document.body.classList.remove('nav-open');var b=document.querySelector('.nav-toggle');if(b)b.setAttribute('aria-expanded','false');}});</script>

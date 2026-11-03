@@ -43,9 +43,27 @@
   <meta name="twitter:image" content="https://corvusdevs.github.io/Corvus-Music-Player/og-image.png">
   <link rel="icon" href="../../icon.png">
   <link rel="apple-touch-icon" href="../../icon.png">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"MobileApplication","name":"Corvus Music Player","operatingSystem":"iOS, iPadOS","applicationCategory":"MultimediaApplication","description":"En musikspelare som fungerar offline. Inga konton, ingen strömning, bara din bibliotek.","softwareVersion":"1.0","downloadUrl":"https://apps.apple.com/app/id6781115973","image":"https://corvusdevs.github.io/Corvus-Music-Player/icon.png","author":{"@type":"Organization","name":"CorvusDevs","url":"https://corvusdevs.github.io/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-  </script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Corvus Music Player",
+  "operatingSystem": "iOS, iPadOS",
+  "applicationCategory": "MultimediaApplication",
+  "description": "En musikspelare som fungerar offline. Inga konton, ingen strömning, bara din bibliotek.",
+  "softwareVersion": "1.0.1",
+  "downloadUrl": "https://apps.apple.com/app/id6781115973",
+  "image": "https://corvusdevs.github.io/Corvus-Music-Player/icon.png",
+  "author": {
+    "@type": "Organization",
+    "name": "CorvusDevs",
+    "url": "https://corvusdevs.github.io/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0.99",
+    "priceCurrency": "USD"
+  }
+}</script>
   <style>
     /* ac-no-horizontal-scroll v1 */
     html, body { overflow-x: clip; max-width: 100%; }
@@ -63,7 +81,7 @@
     .nav-links { display:flex; align-items:center; gap:28px; margin:0; padding:0; list-style:none; }
     .nav-links a { color:var(--muted); text-decoration:none; font-size:14px; font-weight:600; }
     .nav-links a:hover { color:var(--text); }
-    .nav-links .store-link { color:white; background:var(--accent); border-radius:999px; padding:9px 15px; }
+    .nav-links .store-link { color:white; background:#b93624; border-radius:999px; padding:9px 15px; }
     .lang-wrap { position:relative; }
     .lang-btn { border:0; background:transparent; color:var(--muted); font:inherit; font-size:14px; cursor:pointer; }
     .lang-menu { display:none; position:absolute; right:0; top:36px; min-width:150px; padding:8px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; }
@@ -158,7 +176,7 @@
       <li><a href="#whats-new" data-i18n="nav_whats_new">Nyheter</a></li>
       <li><a href="../../support.html" data-i18n="nav_support">Support</a></li>
       <li class="lang-wrap"><button class="lang-btn" aria-label="Språk" onclick="this.nextElementSibling.classList.toggle('open');event.stopPropagation();"><span class="lang-glyph">文A</span> <span id="lang-current">Svenska</span></button><div class="lang-menu"><a href="../../">English</a><a href="../es/">Español</a><a href="../fr/">Français</a><a href="../de/">Deutsch</a><a href="../pt/">Português</a><a href="../it/">Italiano</a><a href="../nl/">Nederlands</a><a href="../pl/">Polski</a><a href="../sv/">Svenska</a><a href="../tr/">Türkçe</a><a href="../id/">Bahasa Indonesia</a><a href="../vi/">Tiếng Việt</a><a href="../ja/">日本語</a><a href="../ko/">한국어</a><a href="../zh/">简体中文</a><a href="../ru/">Русский</a><a href="../ar/">العربية</a><a href="../hi/">हिन्दी</a><a href="../th/">ไทย</a></div></li>
-      <li><a class="store-link" href="https://apps.apple.com/app/id6781115973" data-i18n="nav_download">Visa i App Store</a></li>
+      <li><a data-product-store class="store-link" href="https://apps.apple.com/app/id6781115973" data-i18n="nav_download">Visa i App Store</a></li>
     </ul>
   </nav>
   <main>
@@ -168,8 +186,8 @@
           <div class="eyebrow" data-i18n="hero_eyebrow">Ditt bibliotek. Din enhet.</div>
           <h1 data-i18n="hero_title">Din musik, offline.</h1>
           <p class="hero-copy" data-i18n="hero_copy">En musikspelare som fungerar offline. Inga konton, ingen strömning, bara din bibliotek.</p>
-          <div class="hero-actions"><a class="app-store" href="https://apps.apple.com/app/id6781115973" aria-label="Hämta i App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg><span data-i18n="download">Hämta i App Store</span></a><a class="secondary-link" href="#screenshots" data-i18n="see_app">Se appen</a></div>
-          <span class="release-note" data-i18n="release_note">Version 1.0 finns nu för iPhone och iPad.</span>
+          <div class="hero-actions"><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973" aria-label="Hämta i App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg><span data-i18n="download">Hämta i App Store</span></a><a class="secondary-link" href="#screenshots" data-i18n="see_app">Se appen</a></div>
+          <span class="release-note" data-i18n="release_note">Version <span data-product-field="version">1.0.1</span> finns nu för iPhone och iPad.</span>
         </div>
         <div class="hero-devices" aria-label="Corvus Music Player på iPhone och iPad"><img class="hero-ipad" src="../../screenshots/ipad-library.png" alt="Corvus Music Player på iPhone och iPad"><img class="hero-phone" src="../../screenshots/iphone-now-playing.png" alt="Corvus Music Player på iPhone och iPad"></div>
       </section>
@@ -187,10 +205,10 @@
     <section class="block"><div class="container"><div class="section-label" data-i18n="all_label">Allt ingår</div><h2 class="section-title" data-i18n="all_title">Hela funktionslistan.</h2><ul class="feature-list">
       <li data-i18n="all_1">Importera ljudfiler från Filer, AirDrop, iCloud Drive eller din dator via Finder. MP3, AAC, ALAC, FLAC och mer.</li><li data-i18n="all_2">Gaplös uppspelning</li><li data-i18n="all_3">Korsfade</li><li data-i18n="all_4">ReplayGain-volymnivellering</li><li data-i18n="all_5">Kommande</li><li data-i18n="all_6">Blanda</li><li data-i18n="all_7">Sovtidslås</li><li data-i18n="all_8">Favoriter</li><li data-i18n="all_9">Omslag</li><li data-i18n="all_10">Klara spellistor</li><li data-i18n="all_11">Etikettredigerare</li><li data-i18n="all_12">Dubbleringar</li><li data-i18n="all_13">Historik</li><li data-i18n="all_14">Bokmärken</li><li data-i18n="all_15">Nu spelas</li><li data-i18n="all_16">Din musik, offline.</li>
     </ul></div></section>
-    <section class="block" id="whats-new"><div class="container"><div class="section-label" data-i18n="change_label">Godkänd App Store version</div><h2 class="section-title" data-i18n="change_title">Version 1.0 är här.</h2><details class="changelog-box" open><summary data-i18n="change_summary">Nyheter i version 1.0</summary><div class="changelog-body"><span class="version-pill">1.0</span><ul><li data-i18n="change_1">Bibliotek</li><li data-i18n="change_2">Text</li><li data-i18n="change_3">Wi-Fi-deling</li><li data-i18n="change_4">Gaplös uppspelning</li><li data-i18n="change_5">Klar för CarPlay</li><li data-i18n="change_6">Din musik, offline.</li></ul></div></details></div></section>
+    <section class="block" id="whats-new"><div class="container"><div class="section-label" data-i18n="change_label">Godkänd App Store version</div><h2 class="section-title" data-i18n="change_title">Version <span data-product-field="version">1.0.1</span> är här.</h2><details class="changelog-box" open><summary data-i18n="change_summary">Nyheter i version <span data-product-field="version">1.0.1</span></summary><div class="changelog-body"><span class="version-pill" data-product-field="version">1.0.1</span><ul><li>Uppdaterad Corvus-design med en ny appsymbol och korallfärgad accent.</li><li>Snabbare kallstarter och korrekta laddningstillstånd i hela biblioteket.</li><li>Jämnare uppspelning och snabbare låtbyten.</li><li>Lägg till musik direkt från listor med låtar, album, spellistor, mappar och andra vyer.</li><li>Appväxlaren visar nu det riktiga Corvus Music-gränssnittet.</li></ul><span class="version-pill">1.0</span><ul><li data-i18n="change_1">Bibliotek</li><li data-i18n="change_2">Text</li><li data-i18n="change_3">Wi-Fi-deling</li><li data-i18n="change_4">Gaplös uppspelning</li><li data-i18n="change_5">Klar för CarPlay</li><li data-i18n="change_6">Din musik, offline.</li></ul></div></details></div></section>
     <section class="block" id="faq"><div class="container"><div class="section-label">Vanliga frågor</div><h2 class="section-title" data-i18n="faq_title">Vanliga frågor.</h2><div class="faq"><details><summary data-i18n="q1">Din musik, offline.</summary><p data-i18n="a1">En musikspelare som fungerar offline. Inga konton, ingen strömning, bara din bibliotek.</p></details><details><summary data-i18n="q2">Importera</summary><p data-i18n="a2">Importera ljud från Filer, AirDrop, Wi-Fi-deling eller en nätverksserver.</p></details><details><summary data-i18n="q3">Integritet</summary><p data-i18n="a3">En musikspelare som fungerar offline. Inga konton, ingen strömning, bara din bibliotek.</p></details><details><summary data-i18n="q4">Klar för CarPlay</summary><p data-i18n="a4">CarPlay, AirPlay, kontroller på låsskärmen, Dynamic Island, hörlursremoter. Alla ingår.</p></details></div></div></section>
     <section class="block"><div class="container"><div class="section-label" data-i18n="req_label">Krav</div><h2 class="section-title" data-i18n="req_title">Det här behöver du.</h2><div class="requirements"><div class="requirement"><span data-i18n="req_device_label">Enheter</span><strong data-i18n="req_device">iPhone + iPad</strong></div><div class="requirement"><span data-i18n="req_system_label">System</span><strong data-i18n="req_system">iOS 18+</strong></div><div class="requirement"><span data-i18n="req_files_label">Musik</span><strong data-i18n="req_files">Importera ljudfiler</strong></div><div class="requirement"><span data-i18n="req_account_label">Konto</span><strong data-i18n="req_account">Krävs inte</strong></div></div></div></section>
-    <section class="final-cta"><h2 data-i18n="final_title">Ta med dig musiken.</h2><p data-i18n="final_copy">Ditt bibliotek, ditt ljud och din lyssningshistorik förblir dina.</p><a class="app-store" href="https://apps.apple.com/app/id6781115973"><span data-i18n="final_download">Visa Corvus Music Player i App Store</span></a></section>
+    <section class="final-cta"><h2 data-i18n="final_title">Ta med dig musiken.</h2><p data-i18n="final_copy">Ditt bibliotek, ditt ljud och din lyssningshistorik förblir dina.</p><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973"><span data-i18n="final_download">Visa Corvus Music Player i App Store</span></a></section>
   </main>
   <footer><div class="footer-inner"><span data-i18n="footer_copy">Corvus Music Player · CorvusDevs</span><div class="footer-links"><a href="../../support.html" data-i18n="footer_support">Inställningar</a><a href="../../privacy.html" data-i18n="footer_privacy">Integritet</a><a href="mailto:corvusdevs@outlook.com" data-i18n="footer_contact">Kontakt</a></div></div></footer>
   <script>document.addEventListener('click',function(e){var m=document.querySelector('.lang-menu');if(m)m.classList.remove('open');if(e.target.closest&&e.target.closest('.nav-links a')){document.body.classList.remove('nav-open');var b=document.querySelector('.nav-toggle');if(b)b.setAttribute('aria-expanded','false');}});</script>
