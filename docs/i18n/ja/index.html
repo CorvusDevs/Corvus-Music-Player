@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Corvus Music Player: あなたの音楽を、オフラインで。</title>
-  <meta name="description" content="オフライン優先の音楽プレイヤー。アカウントもストリーミングも不要。あなたのライブラリだけですべて。">
+  <meta name="description" content="自分の音楽をiPhoneとiPadで再生。サブスクリプション、ストリーミングサービス、アカウントは不要です。">
   <link rel="canonical" href="https://corvusdevs.github.io/Corvus-Music-Player/i18n/ja/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#09080d">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://corvusdevs.github.io/Corvus-Music-Player/i18n/ja/">
   <meta property="og:title" content="Corvus Music Player: あなたの音楽を、オフラインで。">
-  <meta property="og:description" content="オフライン優先の音楽プレイヤー。アカウントもストリーミングも不要。あなたのライブラリだけですべて。">
+  <meta property="og:description" content="自分の音楽をiPhoneとiPadで再生。サブスクリプション、ストリーミングサービス、アカウントは不要です。">
   <meta property="og:image" content="https://corvusdevs.github.io/Corvus-Music-Player/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -39,7 +39,7 @@
   <meta property="og:site_name" content="CorvusDevs">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Corvus Music Player: あなたの音楽を、オフラインで。">
-  <meta name="twitter:description" content="オフライン優先の音楽プレイヤー。アカウントもストリーミングも不要。あなたのライブラリだけですべて。">
+  <meta name="twitter:description" content="自分の音楽をiPhoneとiPadで再生。サブスクリプション、ストリーミングサービス、アカウントは不要です。">
   <meta name="twitter:image" content="https://corvusdevs.github.io/Corvus-Music-Player/og-image.png">
   <link rel="icon" href="../../icon.png">
   <link rel="apple-touch-icon" href="../../icon.png">
@@ -166,6 +166,7 @@
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none!important; animation:none!important; } }
   </style>
   <script src="/Corvus-Music-Player/language-router.js"></script>
+<link rel="stylesheet" href="../../improvements.css">
 </head>
 <body>
   <nav aria-label="メインナビゲーション">
@@ -185,9 +186,9 @@
         <div>
           <div class="eyebrow" data-i18n="hero_eyebrow">あなたのライブラリ。あなたのデバイス。</div>
           <h1 data-i18n="hero_title">あなたの音楽を、オフラインで。</h1>
-          <p class="hero-copy" data-i18n="hero_copy">オフライン優先の音楽プレイヤー。アカウントもストリーミングも不要。あなたのライブラリだけですべて。</p>
+          <p class="hero-copy" data-i18n="hero_copy">自分の音楽をiPhoneとiPadで再生。サブスクリプション、ストリーミングサービス、アカウントは不要です。</p>
           <div class="hero-actions"><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973" aria-label="App Storeからダウンロード"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg><span data-i18n="download">App Storeからダウンロード</span></a><a class="secondary-link" href="#screenshots" data-i18n="see_app">アプリを見る</a></div>
-          <span class="release-note" data-i18n="release_note">バージョン<span data-product-field="version">1.0.1</span>をiPhoneとiPadでご利用いただけます。</span>
+          <p class="hero-requirements">iPhone + iPad · iOS / iPadOS 18+</p><span class="release-note" data-i18n="release_note">バージョン<span data-product-field="version">1.0.1</span>をiPhoneとiPadでご利用いただけます。</span>
         </div>
         <div class="hero-devices" aria-label="iPhoneとiPadのCorvus Music Player"><img class="hero-ipad" src="../../screenshots/ipad-library.png" alt="iPhoneとiPadのCorvus Music Player"><img class="hero-phone" src="../../screenshots/iphone-now-playing.png" alt="iPhoneとiPadのCorvus Music Player"></div>
       </section>
@@ -195,19 +196,15 @@
     <div class="trust-strip"><div class="container trust-grid"><div><strong data-i18n="trust_private">プライバシーを重視した設計</strong><span data-i18n="trust_private_copy">オフライン優先の音楽プレイヤー。アカウントもストリーミングも不要。あなたのライブラリだけですべて。</span></div><div><strong data-i18n="trust_native">両方の画面に最適化</strong><span data-i18n="trust_native_copy">CarPlay, AirPlay、ロック画面コントロール、Dynamic Island、ヘッドホンリモコン。すべて標準搭載。</span></div><div><strong data-i18n="trust_owned">自分の音楽のために</strong><span data-i18n="trust_owned_copy">オフライン優先の音楽プレイヤー。アカウントもストリーミングも不要。あなたのライブラリだけですべて。</span></div></div></div>
     <section class="block" id="screenshots"><div class="container"><div class="section-label" data-i18n="screens_label">アプリの中を見る</div><h2 class="section-title" data-i18n="screens_title">どの画面にもなじむ、本格的な音楽ライブラリ。</h2><div class="showcase"><div class="showcase-main"><img src="../../screenshots/ipad-now-playing.png" alt="iPhoneとiPadのCorvus Music Player" loading="lazy"></div><div class="phone-row"><div class="phone-card"><img src="../../screenshots/iphone-equalizer.png" alt="iPhoneとiPadのCorvus Music Player" loading="lazy"></div><div class="phone-card"><img src="../../screenshots/iphone-library.png" alt="iPhoneとiPadのCorvus Music Player" loading="lazy"></div><div class="phone-card"><img src="../../screenshots/iphone-lyrics.png" alt="iPhoneとiPadのCorvus Music Player" loading="lazy"></div></div></div></div></section>
     <section class="block" id="features"><div class="container"><div class="section-label" data-i18n="features_label">ライブラリ</div><h2 class="section-title" data-i18n="features_title">個人ライブラリに必要なものをすべて。</h2><div class="features-grid">
-      <article class="feature-card"><div class="feature-icon">♪</div><h3 data-i18n="f1_title">ライブラリ</h3><p data-i18n="f1_copy">ライブラリを検索</p></article>
-      <article class="feature-card"><div class="feature-icon">≋</div><h3 data-i18n="f2_title">イコライザ</h3><p data-i18n="f2_copy">フィルターはありません。フィルターを追加してチェーンを開始するか、上部のヘッドホンプリセットを選択して公開された補正を読み込むかを選択できます。</p></article>
-      <article class="feature-card"><div class="feature-icon">◉</div><h3 data-i18n="f3_title">歌詞</h3><p data-i18n="f3_copy">歌詞を同期します</p></article>
-      <article class="feature-card"><div class="feature-icon">↥</div><h3 data-i18n="f4_title">読み込む</h3><p data-i18n="f4_copy">からオーディオを読み込む：ファイル、AirDrop、Wi-Fi シェア、またはネットワークサーバー。</p></article>
-      <article class="feature-card"><div class="feature-icon">☷</div><h3 data-i18n="f5_title">スマートプレイリスト</h3><p data-i18n="f5_copy">スマートプレイリストは、ライブラリ、レーティング、再生履歴が変更されるたびに自動的に更新されます。</p></article>
-      <article class="feature-card"><div class="feature-icon">⌁</div><h3 data-i18n="f6_title">CarPlay 対応</h3><p data-i18n="f6_copy">CarPlay, AirPlay、ロック画面コントロール、Dynamic Island、ヘッドホンリモコン。すべて標準搭載。</p></article>
-    </div></div></section>
-    <section class="block"><div class="container"><div class="section-label" data-i18n="all_label">すべてを搭載</div><h2 class="section-title" data-i18n="all_title">全機能の一覧。</h2><ul class="feature-list">
+      <article class="feature-card"><div class="feature-icon">♪</div><h3 data-i18n="f1_title">ライブラリ</h3><p data-i18n="f1_copy">ライブラリを検索</p></article><article class="feature-card"><div class="feature-icon">↥</div><h3 data-i18n="f4_title">読み込む</h3><p data-i18n="f4_copy">からオーディオを読み込む：ファイル、AirDrop、Wi-Fi シェア、またはネットワークサーバー。</p></article><article class="feature-card"><div class="feature-icon">≋</div><h3 data-i18n="f2_title">イコライザ</h3><p data-i18n="f2_copy">フィルターはありません。フィルターを追加してチェーンを開始するか、上部のヘッドホンプリセットを選択して公開された補正を読み込むかを選択できます。</p></article><article class="feature-card"><div class="feature-icon">◉</div><h3 data-i18n="f3_title">歌詞</h3><p data-i18n="f3_copy">歌詞を同期します</p></article><article class="feature-card"><div class="feature-icon">☷</div><h3 data-i18n="f5_title">スマートプレイリスト</h3><p data-i18n="f5_copy">スマートプレイリストは、ライブラリ、レーティング、再生履歴が変更されるたびに自動的に更新されます。</p></article><article class="feature-card"><div class="feature-icon">⌁</div><h3 data-i18n="f6_title">CarPlay 対応</h3><p data-i18n="f6_copy">CarPlay, AirPlay、ロック画面コントロール、Dynamic Island、ヘッドホンリモコン。すべて標準搭載。</p></article>
+    </div><details class="feature-detail"><summary data-i18n="all_title">全機能の一覧。</summary><ul class="feature-list">
       <li data-i18n="all_1">Finder、AirDrop、iCloud Drive、またはコンピューターから MP3、AAC、ALAC、FLAC などの音声ファイルをインポートできます。</li><li data-i18n="all_2">途切れない再生</li><li data-i18n="all_3">クロスフェード</li><li data-i18n="all_4">ReplayGain ボリュームレベル化</li><li data-i18n="all_5">次</li><li data-i18n="all_6">シャッフル</li><li data-i18n="all_7">スリープタイマー</li><li data-i18n="all_8">お気に入り</li><li data-i18n="all_9">アートワーク</li><li data-i18n="all_10">スマートプレイリスト</li><li data-i18n="all_11">タグエディタ</li><li data-i18n="all_12">重複</li><li data-i18n="all_13">履歴</li><li data-i18n="all_14">ブックマーク</li><li data-i18n="all_15">再生中</li><li data-i18n="all_16">オフライン音楽</li>
-    </ul></div></section>
-    <section class="block" id="whats-new"><div class="container"><div class="section-label" data-i18n="change_label">App Store承認済みリリース</div><h2 class="section-title" data-i18n="change_title">バージョン<span data-product-field="version">1.0.1</span>が登場。</h2><details class="changelog-box" open><summary data-i18n="change_summary">バージョン<span data-product-field="version">1.0.1</span>の新機能</summary><div class="changelog-body"><span class="version-pill" data-product-field="version">1.0.1</span><ul><li>新しいアプリアイコンとコーラルのアクセントで、Corvusのビジュアルを刷新しました。</li><li>コールド起動を高速化し、ライブラリ全体で正確な読み込み状態を表示します。</li><li>再生をより滑らかにし、曲のスキップを高速化しました。</li><li>曲、アルバム、プレイリスト、フォルダなどの一覧画面から直接音楽を追加できます。</li><li>アプリスイッチャーにCorvus Musicの実際の画面が表示されるようになりました。</li></ul><span class="version-pill">1.0</span><ul><li data-i18n="change_1">ライブラリ</li><li data-i18n="change_2">歌詞</li><li data-i18n="change_3">Wi-Fi 共有</li><li data-i18n="change_4">途切れない再生</li><li data-i18n="change_5">CarPlay 対応</li><li data-i18n="change_6">オフライン音楽</li></ul></div></details></div></section>
+    </ul></details></div></section>
+
+
     <section class="block" id="faq"><div class="container"><div class="section-label">よくある質問</div><h2 class="section-title" data-i18n="faq_title">よくある質問。</h2><div class="faq"><details><summary data-i18n="q1">オフライン音楽</summary><p data-i18n="a1">オフライン優先の音楽プレイヤー。アカウントもストリーミングも不要。あなたのライブラリだけですべて。</p></details><details><summary data-i18n="q2">読み込む</summary><p data-i18n="a2">からオーディオを読み込む：ファイル、AirDrop、Wi-Fi シェア、またはネットワークサーバー。</p></details><details><summary data-i18n="q3">プライバシー</summary><p data-i18n="a3">オフライン優先の音楽プレイヤー。アカウントもストリーミングも不要。あなたのライブラリだけですべて。</p></details><details><summary data-i18n="q4">CarPlay 対応</summary><p data-i18n="a4">CarPlay, AirPlay、ロック画面コントロール、Dynamic Island、ヘッドホンリモコン。すべて標準搭載。</p></details></div></div></section>
-    <section class="block"><div class="container"><div class="section-label" data-i18n="req_label">動作要件</div><h2 class="section-title" data-i18n="req_title">必要なもの。</h2><div class="requirements"><div class="requirement"><span data-i18n="req_device_label">デバイス</span><strong data-i18n="req_device">iPhone + iPad</strong></div><div class="requirement"><span data-i18n="req_system_label">システム</span><strong data-i18n="req_system">iOS 18+</strong></div><div class="requirement"><span data-i18n="req_files_label">音楽</span><strong data-i18n="req_files">オーディオファイルを読み込む…</strong></div><div class="requirement"><span data-i18n="req_account_label">アカウント</span><strong data-i18n="req_account">不要</strong></div></div></div></section>
+    <section class="block"><div class="container"><div class="section-label" data-i18n="req_label">動作要件</div><h2 class="section-title" data-i18n="req_title">必要なもの。</h2><div class="requirements"><div class="requirement"><span data-i18n="req_device_label">デバイス</span><strong data-i18n="req_device">iPhone + iPad</strong></div><div class="requirement"><span data-i18n="req_system_label">システム</span><strong data-i18n="req_system">iOS / iPadOS 18+</strong></div><div class="requirement"><span data-i18n="req_files_label">音楽</span><strong data-i18n="req_files">オーディオファイルを読み込む…</strong></div><div class="requirement"><span data-i18n="req_account_label">アカウント</span><strong data-i18n="req_account">不要</strong></div></div></div></section>
+    <section class="block release-history" id="whats-new"><div class="container"><p class="release-meta">v<span data-product-field="version">1.0.1</span> · <time datetime="2026-08-22">2026-08-22</time></p><details class="changelog-box"><summary data-i18n="change_summary">バージョン<span data-product-field="version">1.0.1</span>の新機能</summary><div class="changelog-body"><span class="version-pill" data-product-field="version">1.0.1</span><ul><li>新しいアプリアイコンとコーラルのアクセントで、Corvusのビジュアルを刷新しました。</li><li>コールド起動を高速化し、ライブラリ全体で正確な読み込み状態を表示します。</li><li>再生をより滑らかにし、曲のスキップを高速化しました。</li><li>曲、アルバム、プレイリスト、フォルダなどの一覧画面から直接音楽を追加できます。</li><li>アプリスイッチャーにCorvus Musicの実際の画面が表示されるようになりました。</li></ul><span class="version-pill">1.0</span><ul><li data-i18n="change_1">ライブラリ</li><li data-i18n="change_2">歌詞</li><li data-i18n="change_3">Wi-Fi 共有</li><li data-i18n="change_4">途切れない再生</li><li data-i18n="change_5">CarPlay 対応</li><li data-i18n="change_6">オフライン音楽</li></ul></div></details></div></section>
     <section class="final-cta"><h2 data-i18n="final_title">音楽を持ち歩こう。</h2><p data-i18n="final_copy">ライブラリも音も再生履歴も、あなたのものです。</p><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973"><span data-i18n="final_download">App StoreでCorvus Music Playerを見る</span></a></section>
   </main>
   <footer><div class="footer-inner"><span data-i18n="footer_copy">Corvus Music Player · CorvusDevs</span><div class="footer-links"><a href="../../support.html" data-i18n="footer_support">設定</a><a href="../../privacy.html" data-i18n="footer_privacy">プライバシー</a><a href="mailto:corvusdevs@outlook.com" data-i18n="footer_contact">お問い合わせ</a></div></div></footer>

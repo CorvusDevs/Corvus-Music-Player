@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Corvus Music Player: 내 음악을 오프라인으로.</title>
-  <meta name="description" content="계정이나 스트리밍 없이, 오직 당신의 라이브러리만 사용하는 오프라인 음악 플레이어입니다.">
+  <meta name="description" content="소유한 음악을 iPhone과 iPad에서 재생하세요. 구독, 스트리밍 서비스, 계정이 필요 없습니다.">
   <link rel="canonical" href="https://corvusdevs.github.io/Corvus-Music-Player/i18n/ko/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#09080d">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://corvusdevs.github.io/Corvus-Music-Player/i18n/ko/">
   <meta property="og:title" content="Corvus Music Player: 내 음악을 오프라인으로.">
-  <meta property="og:description" content="계정이나 스트리밍 없이, 오직 당신의 라이브러리만 사용하는 오프라인 음악 플레이어입니다.">
+  <meta property="og:description" content="소유한 음악을 iPhone과 iPad에서 재생하세요. 구독, 스트리밍 서비스, 계정이 필요 없습니다.">
   <meta property="og:image" content="https://corvusdevs.github.io/Corvus-Music-Player/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -39,7 +39,7 @@
   <meta property="og:site_name" content="CorvusDevs">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Corvus Music Player: 내 음악을 오프라인으로.">
-  <meta name="twitter:description" content="계정이나 스트리밍 없이, 오직 당신의 라이브러리만 사용하는 오프라인 음악 플레이어입니다.">
+  <meta name="twitter:description" content="소유한 음악을 iPhone과 iPad에서 재생하세요. 구독, 스트리밍 서비스, 계정이 필요 없습니다.">
   <meta name="twitter:image" content="https://corvusdevs.github.io/Corvus-Music-Player/og-image.png">
   <link rel="icon" href="../../icon.png">
   <link rel="apple-touch-icon" href="../../icon.png">
@@ -166,6 +166,7 @@
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none!important; animation:none!important; } }
   </style>
   <script src="/Corvus-Music-Player/language-router.js"></script>
+<link rel="stylesheet" href="../../improvements.css">
 </head>
 <body>
   <nav aria-label="주요 탐색">
@@ -185,9 +186,9 @@
         <div>
           <div class="eyebrow" data-i18n="hero_eyebrow">나의 보관함. 나의 기기.</div>
           <h1 data-i18n="hero_title">내 음악을 오프라인으로.</h1>
-          <p class="hero-copy" data-i18n="hero_copy">계정이나 스트리밍 없이, 오직 당신의 라이브러리만 사용하는 오프라인 음악 플레이어입니다.</p>
+          <p class="hero-copy" data-i18n="hero_copy">소유한 음악을 iPhone과 iPad에서 재생하세요. 구독, 스트리밍 서비스, 계정이 필요 없습니다.</p>
           <div class="hero-actions"><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973" aria-label="App Store에서 다운로드"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg><span data-i18n="download">App Store에서 다운로드</span></a><a class="secondary-link" href="#screenshots" data-i18n="see_app">앱 보기</a></div>
-          <span class="release-note" data-i18n="release_note">버전 <span data-product-field="version">1.0.1</span>을 iPhone과 iPad에서 사용할 수 있습니다.</span>
+          <p class="hero-requirements">iPhone + iPad · iOS / iPadOS 18+</p><span class="release-note" data-i18n="release_note">버전 <span data-product-field="version">1.0.1</span>을 iPhone과 iPad에서 사용할 수 있습니다.</span>
         </div>
         <div class="hero-devices" aria-label="iPhone과 iPad의 Corvus Music Player"><img class="hero-ipad" src="../../screenshots/ipad-library.png" alt="iPhone과 iPad의 Corvus Music Player"><img class="hero-phone" src="../../screenshots/iphone-now-playing.png" alt="iPhone과 iPad의 Corvus Music Player"></div>
       </section>
@@ -195,19 +196,15 @@
     <div class="trust-strip"><div class="container trust-grid"><div><strong data-i18n="trust_private">개인정보 보호 중심 설계</strong><span data-i18n="trust_private_copy">계정이나 스트리밍 없이, 오직 당신의 라이브러리만 사용하는 오프라인 음악 플레이어입니다.</span></div><div><strong data-i18n="trust_native">두 화면 모두에 최적화</strong><span data-i18n="trust_native_copy">CarPlay, AirPlay, 잠금 화면 제어, 동적 아일랜드, 헤드폰 리모트. 모두 포함되어 있습니다.</span></div><div><strong data-i18n="trust_owned">소유한 음악을 위한 앱</strong><span data-i18n="trust_owned_copy">계정이나 스트리밍 없이, 오직 당신의 라이브러리만 사용하는 오프라인 음악 플레이어입니다.</span></div></div></div>
     <section class="block" id="screenshots"><div class="container"><div class="section-label" data-i18n="screens_label">앱 살펴보기</div><h2 class="section-title" data-i18n="screens_title">모든 화면에 어울리는 진짜 음악 보관함.</h2><div class="showcase"><div class="showcase-main"><img src="../../screenshots/ipad-now-playing.png" alt="iPhone과 iPad의 Corvus Music Player" loading="lazy"></div><div class="phone-row"><div class="phone-card"><img src="../../screenshots/iphone-equalizer.png" alt="iPhone과 iPad의 Corvus Music Player" loading="lazy"></div><div class="phone-card"><img src="../../screenshots/iphone-library.png" alt="iPhone과 iPad의 Corvus Music Player" loading="lazy"></div><div class="phone-card"><img src="../../screenshots/iphone-lyrics.png" alt="iPhone과 iPad의 Corvus Music Player" loading="lazy"></div></div></div></div></section>
     <section class="block" id="features"><div class="container"><div class="section-label" data-i18n="features_label">라이브러리</div><h2 class="section-title" data-i18n="features_title">개인 음악 보관함에 필요한 모든 것.</h2><div class="features-grid">
-      <article class="feature-card"><div class="feature-icon">♪</div><h3 data-i18n="f1_title">라이브러리</h3><p data-i18n="f1_copy">라이브러리 검색</p></article>
-      <article class="feature-card"><div class="feature-icon">≋</div><h3 data-i18n="f2_title">이퀄라이저</h3><p data-i18n="f2_copy">필터가 없습니다. 필터 체인을 시작하려면 &#x27;필터 추가&#x27;를 탭하거나, 위의 헤드폰 프리셋을 선택하여 게시된 보정을 로드하세요.</p></article>
-      <article class="feature-card"><div class="feature-icon">◉</div><h3 data-i18n="f3_title">가사</h3><p data-i18n="f3_copy">동기화된 가사</p></article>
-      <article class="feature-card"><div class="feature-icon">↥</div><h3 data-i18n="f4_title">가져오기</h3><p data-i18n="f4_copy">에서 오디오를 가져옵니다. 파일, 에어드롭, Wi-Fi 공유 또는 네트워크 서버에서 가져올 수 있습니다.</p></article>
-      <article class="feature-card"><div class="feature-icon">☷</div><h3 data-i18n="f5_title">스마트 플레이리스트</h3><p data-i18n="f5_copy">스마트 플레이리스트는 라이브러리, 평점, 재생 이력이 변경될 때 자동으로 업데이트됩니다.</p></article>
-      <article class="feature-card"><div class="feature-icon">⌁</div><h3 data-i18n="f6_title">CarPlay 지원</h3><p data-i18n="f6_copy">CarPlay, AirPlay, 잠금 화면 제어, 동적 아일랜드, 헤드폰 리모트. 모두 포함되어 있습니다.</p></article>
-    </div></div></section>
-    <section class="block"><div class="container"><div class="section-label" data-i18n="all_label">모두 포함</div><h2 class="section-title" data-i18n="all_title">전체 기능 목록.</h2><ul class="feature-list">
+      <article class="feature-card"><div class="feature-icon">♪</div><h3 data-i18n="f1_title">라이브러리</h3><p data-i18n="f1_copy">라이브러리 검색</p></article><article class="feature-card"><div class="feature-icon">↥</div><h3 data-i18n="f4_title">가져오기</h3><p data-i18n="f4_copy">에서 오디오를 가져옵니다. 파일, 에어드롭, Wi-Fi 공유 또는 네트워크 서버에서 가져올 수 있습니다.</p></article><article class="feature-card"><div class="feature-icon">≋</div><h3 data-i18n="f2_title">이퀄라이저</h3><p data-i18n="f2_copy">필터가 없습니다. 필터 체인을 시작하려면 &#x27;필터 추가&#x27;를 탭하거나, 위의 헤드폰 프리셋을 선택하여 게시된 보정을 로드하세요.</p></article><article class="feature-card"><div class="feature-icon">◉</div><h3 data-i18n="f3_title">가사</h3><p data-i18n="f3_copy">동기화된 가사</p></article><article class="feature-card"><div class="feature-icon">☷</div><h3 data-i18n="f5_title">스마트 플레이리스트</h3><p data-i18n="f5_copy">스마트 플레이리스트는 라이브러리, 평점, 재생 이력이 변경될 때 자동으로 업데이트됩니다.</p></article><article class="feature-card"><div class="feature-icon">⌁</div><h3 data-i18n="f6_title">CarPlay 지원</h3><p data-i18n="f6_copy">CarPlay, AirPlay, 잠금 화면 제어, 동적 아일랜드, 헤드폰 리모트. 모두 포함되어 있습니다.</p></article>
+    </div><details class="feature-detail"><summary data-i18n="all_title">전체 기능 목록.</summary><ul class="feature-list">
       <li data-i18n="all_1">Finder, AirDrop, iCloud Drive, 또는 컴퓨터에서 MP3, AAC, ALAC, FLAC 등 다양한 오디오 파일을 가져올 수 있습니다.</li><li data-i18n="all_2">연속 재생</li><li data-i18n="all_3">크로스페이드</li><li data-i18n="all_4">ReplayGain 볼륨 레벨링</li><li data-i18n="all_5">다음 재생</li><li data-i18n="all_6">섞기</li><li data-i18n="all_7">수면 타이머</li><li data-i18n="all_8">즐겨찾기</li><li data-i18n="all_9">앨범 아트</li><li data-i18n="all_10">스마트 플레이리스트</li><li data-i18n="all_11">태그 편집기</li><li data-i18n="all_12">중복</li><li data-i18n="all_13">이력</li><li data-i18n="all_14">북마크</li><li data-i18n="all_15">현재 재생 중</li><li data-i18n="all_16">오프라인 음악</li>
-    </ul></div></section>
-    <section class="block" id="whats-new"><div class="container"><div class="section-label" data-i18n="change_label">승인된 App Store 출시</div><h2 class="section-title" data-i18n="change_title">버전 <span data-product-field="version">1.0.1</span> 출시.</h2><details class="changelog-box" open><summary data-i18n="change_summary">버전 <span data-product-field="version">1.0.1</span>의 새로운 기능</summary><div class="changelog-body"><span class="version-pill" data-product-field="version">1.0.1</span><ul><li>새로운 앱 아이콘과 코랄 강조색으로 Corvus의 시각적 정체성을 새롭게 단장했습니다.</li><li>콜드 스타트가 빨라지고 보관함 전체에서 정확한 로딩 상태를 표시합니다.</li><li>재생이 더 부드러워지고 트랙 건너뛰기가 빨라졌습니다.</li><li>노래, 앨범, 플레이리스트, 폴더 및 기타 목록 화면에서 바로 음악을 추가할 수 있습니다.</li><li>앱 전환기에 실제 Corvus Music 화면이 표시됩니다.</li></ul><span class="version-pill">1.0</span><ul><li data-i18n="change_1">라이브러리</li><li data-i18n="change_2">가사</li><li data-i18n="change_3">Wi-Fi 공유</li><li data-i18n="change_4">연속 재생</li><li data-i18n="change_5">CarPlay 지원</li><li data-i18n="change_6">오프라인 음악</li></ul></div></details></div></section>
+    </ul></details></div></section>
+
+
     <section class="block" id="faq"><div class="container"><div class="section-label">자주 묻는 질문</div><h2 class="section-title" data-i18n="faq_title">자주 묻는 질문.</h2><div class="faq"><details><summary data-i18n="q1">오프라인 음악</summary><p data-i18n="a1">계정이나 스트리밍 없이, 오직 당신의 라이브러리만 사용하는 오프라인 음악 플레이어입니다.</p></details><details><summary data-i18n="q2">가져오기</summary><p data-i18n="a2">에서 오디오를 가져옵니다. 파일, 에어드롭, Wi-Fi 공유 또는 네트워크 서버에서 가져올 수 있습니다.</p></details><details><summary data-i18n="q3">개인정보 보호</summary><p data-i18n="a3">계정이나 스트리밍 없이, 오직 당신의 라이브러리만 사용하는 오프라인 음악 플레이어입니다.</p></details><details><summary data-i18n="q4">CarPlay 지원</summary><p data-i18n="a4">CarPlay, AirPlay, 잠금 화면 제어, 동적 아일랜드, 헤드폰 리모트. 모두 포함되어 있습니다.</p></details></div></div></section>
-    <section class="block"><div class="container"><div class="section-label" data-i18n="req_label">요구 사항</div><h2 class="section-title" data-i18n="req_title">필요한 항목.</h2><div class="requirements"><div class="requirement"><span data-i18n="req_device_label">기기</span><strong data-i18n="req_device">iPhone + iPad</strong></div><div class="requirement"><span data-i18n="req_system_label">시스템</span><strong data-i18n="req_system">iOS 18+</strong></div><div class="requirement"><span data-i18n="req_files_label">음악</span><strong data-i18n="req_files">오디오 파일 가져오기</strong></div><div class="requirement"><span data-i18n="req_account_label">계정</span><strong data-i18n="req_account">필요 없음</strong></div></div></div></section>
+    <section class="block"><div class="container"><div class="section-label" data-i18n="req_label">요구 사항</div><h2 class="section-title" data-i18n="req_title">필요한 항목.</h2><div class="requirements"><div class="requirement"><span data-i18n="req_device_label">기기</span><strong data-i18n="req_device">iPhone + iPad</strong></div><div class="requirement"><span data-i18n="req_system_label">시스템</span><strong data-i18n="req_system">iOS / iPadOS 18+</strong></div><div class="requirement"><span data-i18n="req_files_label">음악</span><strong data-i18n="req_files">오디오 파일 가져오기</strong></div><div class="requirement"><span data-i18n="req_account_label">계정</span><strong data-i18n="req_account">필요 없음</strong></div></div></div></section>
+    <section class="block release-history" id="whats-new"><div class="container"><p class="release-meta">v<span data-product-field="version">1.0.1</span> · <time datetime="2026-08-22">2026-08-22</time></p><details class="changelog-box"><summary data-i18n="change_summary">버전 <span data-product-field="version">1.0.1</span>의 새로운 기능</summary><div class="changelog-body"><span class="version-pill" data-product-field="version">1.0.1</span><ul><li>새로운 앱 아이콘과 코랄 강조색으로 Corvus의 시각적 정체성을 새롭게 단장했습니다.</li><li>콜드 스타트가 빨라지고 보관함 전체에서 정확한 로딩 상태를 표시합니다.</li><li>재생이 더 부드러워지고 트랙 건너뛰기가 빨라졌습니다.</li><li>노래, 앨범, 플레이리스트, 폴더 및 기타 목록 화면에서 바로 음악을 추가할 수 있습니다.</li><li>앱 전환기에 실제 Corvus Music 화면이 표시됩니다.</li></ul><span class="version-pill">1.0</span><ul><li data-i18n="change_1">라이브러리</li><li data-i18n="change_2">가사</li><li data-i18n="change_3">Wi-Fi 공유</li><li data-i18n="change_4">연속 재생</li><li data-i18n="change_5">CarPlay 지원</li><li data-i18n="change_6">오프라인 음악</li></ul></div></details></div></section>
     <section class="final-cta"><h2 data-i18n="final_title">음악을 어디서나 즐기세요.</h2><p data-i18n="final_copy">보관함과 사운드, 감상 기록은 계속 나의 것입니다.</p><a data-product-store class="app-store" href="https://apps.apple.com/app/id6781115973"><span data-i18n="final_download">App Store에서 Corvus Music Player 보기</span></a></section>
   </main>
   <footer><div class="footer-inner"><span data-i18n="footer_copy">Corvus Music Player · CorvusDevs</span><div class="footer-links"><a href="../../support.html" data-i18n="footer_support">설정</a><a href="../../privacy.html" data-i18n="footer_privacy">개인정보 보호</a><a href="mailto:corvusdevs@outlook.com" data-i18n="footer_contact">문의</a></div></div></footer>

@@ -1,0 +1,12 @@
+/* Product detail stays available without interrupting the first visit. */
+.hero-requirements{margin:14px 0 0;color:var(--muted);font-size:.9rem;line-height:1.6}
+.feature-detail{margin-top:30px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.feature-detail>summary{font-size:1rem;list-style:revert;min-height:48px;padding:20px 24px}
+.feature-detail>summary::-webkit-details-marker{display:revert}
+.feature-detail .feature-list{padding:0 24px 24px}
+.release-meta{color:var(--muted);font-size:.9rem;margin:0 0 14px}
+.release-history .changelog-box{width:100%;max-width:850px}
+.release-history summary{list-style:revert;min-height:48px}
+.release-history summary::-webkit-details-marker{display:revert}
+.release-history{padding-top:52px}
+@media(max-width:620px){.feature-detail .feature-list{padding-inline:18px}.feature-detail>summary{padding:18px}.release-history{padding-top:36px}}
